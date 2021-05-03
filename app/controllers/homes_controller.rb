@@ -1,6 +1,8 @@
 class HomesController < ApplicationController
-  def books
+  def top
   end
+  
+  
 
   def index
   end
