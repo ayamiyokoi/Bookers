@@ -11,8 +11,7 @@
   <%= f.submit 'Update Book' %>
 <% end %>
 
-<% @books.each do |book| %>
-  <%= link_to "Show", book_path(book.id) %>
+
+  <%= link_to "Show", book_path(@book) %>
   <%= link_to "back", '/books' %>
 
-<% end %>
