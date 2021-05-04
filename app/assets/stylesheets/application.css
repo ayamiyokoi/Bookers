@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+body{
+  margin:33px;
+}
+
+.top p, span {
+  margin:33px;
+}
+
+.show p{
+  margin:33px;
+}
