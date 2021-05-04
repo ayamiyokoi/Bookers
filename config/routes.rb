@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
 resources :books
 
+
 get 'top' => 'homes#top'
 get 'books/new' => 'books#index'
 # get 'books/:id' => 'books#show', as: 'book'
