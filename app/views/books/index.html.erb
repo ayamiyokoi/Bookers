@@ -28,10 +28,20 @@
  <!--form_with部分 -->
 <%= form_with model:@book, local:true do |f| %>
 
+  <% if @book.errors.any? %>
+  <ul>
+    <% @book.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+  <% end %>
+
   <h4>title</h4>
+  <%= f.label :title%>
   <%= f.text_field :title %>
 
   <h4>body</h4>
+  <%= f.label :body%>
   <%= f.text_area :body %>
 
   <%= f.submit 'Create Book' %>
